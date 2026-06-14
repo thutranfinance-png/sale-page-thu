@@ -47,7 +47,7 @@
   img{max-width:100%;display:block;}
   a{text-decoration:none;color:inherit;}
   .container{max-width:1140px;margin:0 auto;padding:0 20px;}
-  section{padding:70px 0;}
+  section{padding:46px 0;}
   h1,h2,h3,h4{color:var(--navy);font-weight:800;line-height:1.25;}
   .eyebrow{
     display:inline-block;color:var(--gold);
@@ -58,7 +58,7 @@
     text-transform:uppercase;margin-bottom:16px;
   }
   .section-title{font-size:clamp(24px,4vw,38px);text-align:center;margin-bottom:14px;}
-  .section-sub{text-align:center;color:var(--gray);max-width:640px;margin:0 auto 50px;font-size:16px;}
+  .section-sub{text-align:center;color:var(--gray);max-width:640px;margin:0 auto 32px;font-size:16px;}
 
   /* ===== Sticky CTA bar ===== */
   .sticky-cta{
@@ -87,8 +87,8 @@
   }
   .btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 6px 18px rgba(242,182,66,0.45);}
   .btn-gold:hover{background:#dba02e;transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,182,66,0.55);}
-  .btn-outline{background:transparent;border:1.5px solid var(--navy);color:var(--navy);}
-  .btn-outline:hover{background:rgba(0,95,167,0.08);transform:translateY(-2px);}
+  .btn-outline{background:#005FA7;border:1.5px solid #005FA7;color:#fff;box-shadow:0 6px 18px rgba(0,95,167,0.35);}
+  .btn-outline:hover{background:var(--navy-light);border-color:var(--navy-light);transform:translateY(-2px);}
   .btn-navy{background:var(--navy);color:#fff;box-shadow:0 6px 18px rgba(0,95,167,0.35);}
   .btn-navy:hover{background:var(--navy-light);transform:translateY(-2px);}
   .btn-block{width:100%;}
@@ -96,7 +96,7 @@
   /* ===== Hero ===== */
   .hero{
     background:#ffffff;
-    color:#1f2937;padding:90px 0 110px;position:relative;overflow:hidden;
+    color:#1f2937;padding:60px 0 70px;position:relative;overflow:hidden;
   }
   .hero::after{
     content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
@@ -111,14 +111,14 @@
   .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:50px;align-items:center;position:relative;z-index:2;}
   .hero h1{color:var(--navy);font-size:clamp(28px,4.5vw,46px);margin-bottom:18px;}
   .hero h1 .highlight{color:var(--gold);}
-  .hero p.lead{font-size:18px;color:#4B5A6B;max-width:540px;margin-bottom:24px;}
+  .hero p.lead{font-size:18px;color:#4B5A6B;max-width:540px;margin-bottom:16px;}
   .hero-story{
     background:var(--bg-soft);border:1px solid #E8EDF3;
-    border-radius:12px;padding:16px 18px;margin-bottom:26px;max-width:540px;
+    border-radius:12px;padding:16px 18px;margin-bottom:18px;max-width:540px;
   }
   .hero-story p{font-size:14.5px;color:#374151;}
   .hero-story strong{color:var(--navy);}
-  .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
+  .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px;}
   .hero-badge{
     background:var(--bg-soft);border:1px solid #E8EDF3;color:#374151;
     padding:10px 16px;border-radius:10px;font-size:13.5px;display:flex;align-items:center;gap:8px;
@@ -126,8 +126,7 @@
   .hero-badge b{color:var(--navy);font-size:18px;}
   .hero-cta-group{display:flex;gap:14px;flex-wrap:wrap;}
   .hero-photo{
-    width:100%;aspect-ratio:1/1;border-radius:50%;overflow:hidden;
-    border:6px solid var(--gold);
+    width:100%;aspect-ratio:1/1;border-radius:var(--radius);overflow:hidden;
     box-shadow:var(--shadow);
     position:relative;
   }
@@ -324,8 +323,8 @@
     .stat-grid{grid-template-columns:repeat(3,1fr);}
   }
   @media(max-width:560px){
-    section{padding:46px 0;}
-    .hero{padding:60px 0 100px;}
+    section{padding:32px 0;}
+    .hero{padding:40px 0 60px;}
     .hero p.lead{font-size:16px;}
     .hero-story{padding:14px 16px;}
     .hero-story p{font-size:13.5px;}
@@ -361,7 +360,7 @@
       </p>
       <div class="hero-story">
         <p>
-          <strong>Bạn có biết:</strong> chi phí lãi vay phục vụ hoạt động kinh doanh là chi phí hợp lý, được trừ khi tính
+          <strong>Bạn có biết:</strong> Chi phí lãi vay phục vụ hoạt động kinh doanh là chi phí hợp lý, được trừ khi tính
           thuế thu nhập doanh nghiệp. Đây là một trong nhiều lý do doanh nghiệp nên chủ động sử dụng các giải pháp tài chính
           ngân hàng đúng cách, vừa tối ưu chi phí thuế, vừa minh bạch hồ sơ để dễ dàng tiếp cận vốn lớn hơn trong tương lai.
         </p>
@@ -392,7 +391,7 @@
       <h2 class="section-title" style="text-align:left">Người bạn đồng hành tài chính đáng tin cậy của Doanh nghiệp</h2>
       <p style="color:var(--gray)">
         Tôi là <strong>Trần Thị Mộng Thu</strong>, hiện đang công tác tại <strong>Sacombank</strong>, giữ vai trò
-        <strong>Trưởng phòng Khách hàng Doanh nghiệp</strong> tại khu vực Cần Thơ và các tỉnh lân cận.
+        <strong>Trưởng phòng Khách hàng Doanh nghiệp</strong> Sacombank Chi nhánh Cần Thơ.
         Với <strong>9 năm</strong> gắn bó cùng ngành ngân hàng, tôi đã đồng hành cùng hàng trăm doanh nghiệp
         từ quy mô nhỏ đến lớn trong việc tiếp cận vốn, tối ưu dòng tiền và mở rộng hoạt động kinh doanh.
       </p>
@@ -680,7 +679,7 @@
           </div>
           <div class="form-group">
             <label for="industry">Lĩnh vực kinh doanh</label>
-            <input type="text" id="industry" name="industry" placeholder="Ví dụ: thương mại, sản xuất, xây dựng">
+            <input type="text" id="industry" name="industry" placeholder="Ví dụ: Thương mại, sản xuất, xây dựng">
           </div>
           <div class="form-group">
             <label for="phone">Số điện thoại *</label>
@@ -696,7 +695,7 @@
           </div>
           <div class="form-group full">
             <label for="need">Nhu cầu cần tư vấn</label>
-            <textarea id="need" name="need" rows="3" placeholder="Ví dụ: cần vay vốn lưu động khoảng 2 tỷ, mở L/C nhập khẩu"></textarea>
+            <textarea id="need" name="need" rows="3" placeholder="Ví dụ: Cần vay vốn lưu động khoảng 2 tỷ, mở L/C nhập khẩu"></textarea>
           </div>
           <div class="form-group full">
             <button type="submit" class="btn btn-gold btn-block btn-shine-loop" id="submitBtn">Gửi thông tin tư vấn</button>
@@ -744,7 +743,7 @@
   <div class="container footer-grid">
     <div>
       <h4>Trần Thị Mộng Thu</h4>
-      <p>Trưởng phòng Khách hàng Doanh nghiệp<br>Ngân hàng Sacombank, Chi nhánh Cần Thơ</p>
+      <p>Trưởng phòng Khách hàng Doanh nghiệp<br>Sacombank Chi nhánh Cần Thơ</p>
       <p style="margin-top:14px">9 năm kinh nghiệm tư vấn giải pháp tài chính cho Doanh nghiệp tại Cần Thơ và khu vực Đồng bằng sông Cửu Long.</p>
       <div class="social-row">
         <a href="#" target="_blank" class="social-link">🎵 TikTok</a>
@@ -757,7 +756,7 @@
       <ul>
         <li>Điện thoại / Zalo: 0939 12 10 18</li>
         <li>Email: thutran.finance@gmail.com</li>
-        <li>Chi nhánh Sacombank Cần Thơ</li>
+        <li>Sacombank Chi nhánh Cần Thơ</li>
         <li>95, 97, 99 Đường Võ Văn Tần, Phường Ninh Kiều, TP. Cần Thơ</li>
       </ul>
     </div>
