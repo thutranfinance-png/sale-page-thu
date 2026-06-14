@@ -130,7 +130,7 @@
     background:var(--bg-soft);border:1px solid #E8EDF3;color:#374151;
     padding:10px 16px;border-radius:10px;font-size:13.5px;display:flex;align-items:center;gap:8px;
   }
-  .hero-badge b{color:var(--navy);font-size:18px;}
+  .hero-badge b{color:var(--navy);font-size:18px;white-space:nowrap;}
   .hero-cta-group{display:flex;gap:14px;flex-wrap:wrap;}
   .hero-photo{
     width:100%;aspect-ratio:1/1;border-radius:var(--radius);overflow:hidden;
@@ -323,7 +323,7 @@
   /* ===== Responsive ===== */
   @media(max-width:900px){
     .hero-grid,.about-grid,.footer-grid{grid-template-columns:1fr;}
-    .hero-photo{max-width:300px;margin:0 auto 30px;}
+    .hero-photo{max-width:300px;margin:0 auto 12px;}
     .hero-grid > div:last-child{order:-1;}
     .services-grid,.why-grid,.process-grid,.test-grid,.benefit-grid,.awards-grid{grid-template-columns:repeat(2,1fr);}
     .form-grid{grid-template-columns:1fr;}
@@ -335,8 +335,8 @@
     .hero p.lead{font-size:16px;}
     .hero-story{padding:14px 16px;}
     .hero-story p{font-size:13.5px;}
-    .hero-badges{gap:10px;}
-    .hero-badge{font-size:12.5px;padding:8px 12px;}
+    .hero-badges{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+    .hero-badge{font-size:12.5px;padding:8px 12px;justify-content:center;text-align:center;}
     .hero-cta-group{flex-direction:column;}
     .hero-cta-group .btn{width:100%;}
     .services-grid,.why-grid,.process-grid,.test-grid,.benefit-grid,.awards-grid{grid-template-columns:1fr;}
@@ -359,7 +359,7 @@
 <header class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow" style="display:block;text-align:center;width:fit-content;margin:0 auto 10px;background:#005FA7;border-color:#005FA7;color:#fff;">Trưởng phòng Khách hàng Doanh nghiệp - Chi nhánh Cần Thơ</span>
+      <span class="eyebrow" style="display:block;text-align:center;width:fit-content;margin:0 auto 10px;background:#005FA7;border-color:#005FA7;color:#fff;">Trưởng phòng Khách hàng Doanh nghiệp Sacombank Chi nhánh Cần Thơ</span>
       <h1>Đồng hành, triển khai các giải pháp tài chính cùng Doanh nghiệp tại Cần Thơ</h1>
       <p class="lead">
         Tôi giúp doanh nghiệp tiếp cận nguồn vốn nhanh, đúng nhu cầu, lãi suất tốt và quy trình hồ sơ tinh gọn.
@@ -376,7 +376,7 @@
         <div class="hero-badge"><b>9+</b> năm kinh nghiệm Sacombank</div>
         <div class="hero-badge"><b>200+</b> doanh nghiệp đã hỗ trợ</div>
         <div class="hero-badge"><b>24h</b> phản hồi tư vấn</div>
-        <div class="hero-badge"><b>Thạc sĩ</b> chuyên ngành TCNH tại ĐH Cần Thơ</div>
+        <div class="hero-badge"><b>Thạc sĩ</b> TCNH - ĐH Cần Thơ</div>
       </div>
       <div class="hero-cta-group">
         <a href="#form" class="btn btn-gold btn-shine-loop">Đăng ký tư vấn miễn phí</a>
