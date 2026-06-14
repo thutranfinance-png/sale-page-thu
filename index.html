@@ -63,15 +63,16 @@
   /* ===== Sticky CTA bar ===== */
   .sticky-cta{
     position:fixed;bottom:0;left:0;right:0;
-    background:var(--navy);color:#fff;
+    background:#ffffff;color:var(--navy);border-top:1px solid #E8EDF3;
     padding:12px 20px;display:flex;align-items:center;justify-content:center;
-    z-index:999;box-shadow:0 -6px 24px rgba(0,0,0,0.18);
+    z-index:999;box-shadow:0 -6px 24px rgba(0,0,0,0.10);
     flex-wrap:wrap;gap:10px;
   }
   .btn{
     display:inline-block;padding:13px 28px;border-radius:8px;font-weight:700;
     font-size:15px;cursor:pointer;border:none;transition:.2s;text-align:center;
     position:relative;overflow:hidden;isolation:isolate;
+    text-transform:uppercase;letter-spacing:.5px;
   }
   .btn::after{
     content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;
@@ -88,8 +89,6 @@
   .btn-gold:hover{background:#dba02e;transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,182,66,0.55);}
   .btn-outline{background:transparent;border:1.5px solid var(--navy);color:var(--navy);}
   .btn-outline:hover{background:rgba(0,95,167,0.08);transform:translateY(-2px);}
-  .btn-outline-light{background:transparent;border:1.5px solid #fff;color:#fff;}
-  .btn-outline-light:hover{background:rgba(255,255,255,0.12);transform:translateY(-2px);}
   .btn-navy{background:var(--navy);color:#fff;box-shadow:0 6px 18px rgba(0,95,167,0.35);}
   .btn-navy:hover{background:var(--navy-light);transform:translateY(-2px);}
   .btn-block{width:100%;}
@@ -133,11 +132,6 @@
     position:relative;
   }
   .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;}
-  .hero-photo small{
-    position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);background:#fff;color:var(--navy);
-    font-size:12px;font-weight:700;padding:8px 18px;border-radius:30px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.12);white-space:nowrap;text-align:center;
-  }
 
   /* ===== About ===== */
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
@@ -193,19 +187,19 @@
   .service-card p{color:var(--gray);font-size:14.5px;}
 
   /* ===== Why choose ===== */
-  .why{background:var(--navy);color:#fff;}
-  .why .section-title,.why .section-sub{color:#fff;}
-  .why .section-sub{color:#C7D4E5;}
+  .why{background:#ffffff;color:#1f2937;}
+  .why .section-title{color:var(--navy);}
+  .why .section-sub{color:var(--gray);}
   .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
   .why-card{
-    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);
+    background:var(--bg-soft);border:1px solid #E8EDF3;box-shadow:var(--shadow);
     border-radius:var(--radius);padding:26px;text-align:center;
   }
   .why-card .num{
     font-size:34px;font-weight:800;color:var(--gold);margin-bottom:10px;
   }
-  .why-card h4{color:#fff;font-size:16px;margin-bottom:8px;}
-  .why-card p{color:#C7D4E5;font-size:13.5px;}
+  .why-card h4{color:var(--navy);font-size:16px;margin-bottom:8px;}
+  .why-card p{color:var(--gray);font-size:13.5px;}
 
   /* ===== Process ===== */
   .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
@@ -285,22 +279,24 @@
   .faq-item.open .faq-a{padding-bottom:18px;max-height:300px;}
 
   /* ===== Footer ===== */
-  footer{background:var(--navy);color:#C7D4E5;padding:50px 0 40px;}
+  footer{background:#ffffff;color:#4B5A6B;padding:50px 0 40px;border-top:1px solid #E8EDF3;}
   .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;}
-  footer h4{color:#fff;margin-bottom:14px;font-size:16px;}
-  footer p,footer li{font-size:13.5px;color:#AFC1D8;}
+  footer h4{color:var(--navy);margin-bottom:14px;font-size:16px;}
+  footer p,footer li{font-size:13.5px;color:var(--gray);}
   footer ul{list-style:none;}
   footer li{margin-bottom:8px;}
+  footer a{color:var(--navy);}
+  footer a:hover{color:var(--gold);}
   .social-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
   .social-link{
-    display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);
-    border:1px solid rgba(255,255,255,0.14);border-radius:30px;padding:8px 16px;
-    font-size:13px;color:#fff;font-weight:600;
+    display:flex;align-items:center;gap:8px;background:var(--bg-soft);
+    border:1px solid #E8EDF3;border-radius:30px;padding:8px 16px;
+    font-size:13px;color:var(--navy);font-weight:600;
   }
-  .social-link:hover{background:rgba(255,255,255,0.14);}
+  .social-link:hover{background:#EFF3F8;}
   .footer-bottom{
     text-align:center;margin-top:40px;padding-top:20px;
-    border-top:1px solid rgba(255,255,255,0.1);font-size:12.5px;color:#8FA3BD;
+    border-top:1px solid #E8EDF3;font-size:12.5px;color:var(--gray);
   }
 
   /* ===== Floating Zalo button ===== */
@@ -321,8 +317,7 @@
   /* ===== Responsive ===== */
   @media(max-width:900px){
     .hero-grid,.about-grid,.footer-grid{grid-template-columns:1fr;}
-    .hero-photo{max-width:240px;margin:0 auto 46px;}
-    .hero-photo small{white-space:normal;width:90%;font-size:11px;bottom:-30px;}
+    .hero-photo{max-width:300px;margin:0 auto 30px;}
     .hero-grid > div:last-child{order:-1;}
     .services-grid,.why-grid,.process-grid,.test-grid,.benefit-grid,.awards-grid{grid-template-columns:repeat(2,1fr);}
     .form-grid{grid-template-columns:1fr;}
@@ -378,13 +373,12 @@
       </div>
       <div class="hero-cta-group">
         <a href="#form" class="btn btn-gold btn-shine-loop">Đăng ký tư vấn miễn phí</a>
-        <a href="https://zalo.me/0939121018" target="_blank" class="btn btn-outline" onclick="trackContact('zalo_hero')">Kết bạn Zalo ngay</a>
+        <a href="https://zalo.me/0939121018" target="_blank" class="btn btn-outline btn-shine-loop" onclick="trackContact('zalo_hero')">Kết bạn Zalo ngay</a>
       </div>
     </div>
     <div>
       <div class="hero-photo">
         <img src="thu-avatar.jpg" alt="Trần Thị Mộng Thu, Trưởng phòng Khách hàng Doanh nghiệp Sacombank Cần Thơ">
-        <small>Trần Thị Mộng Thu. Trưởng phòng KHDN Sacombank Cần Thơ</small>
       </div>
     </div>
   </div>
@@ -705,7 +699,7 @@
             <textarea id="need" name="need" rows="3" placeholder="Ví dụ: cần vay vốn lưu động khoảng 2 tỷ, mở L/C nhập khẩu"></textarea>
           </div>
           <div class="form-group full">
-            <button type="submit" class="btn btn-gold btn-block" id="submitBtn">Gửi thông tin tư vấn</button>
+            <button type="submit" class="btn btn-gold btn-block btn-shine-loop" id="submitBtn">Gửi thông tin tư vấn</button>
           </div>
         </div>
         <p class="form-note">Bằng việc gửi thông tin, bạn đồng ý để chúng tôi liên hệ tư vấn qua số điện thoại, email đã cung cấp.</p>
@@ -795,7 +789,7 @@
 <div class="sticky-cta">
   <div>
     <a href="#form" class="btn btn-gold btn-shine-loop">Đăng ký tư vấn</a>
-    <a href="tel:0939121018" class="btn btn-outline-light" onclick="trackContact('phone_sticky')">Gọi ngay</a>
+    <a href="tel:0939121018" class="btn btn-outline btn-shine-loop" onclick="trackContact('phone_sticky')">Gọi ngay</a>
   </div>
 </div>
 
