@@ -120,15 +120,15 @@
   .hero h1 .highlight{color:var(--gold);}
   .hero p.lead{font-size:18px;color:#4B5A6B;max-width:540px;margin-bottom:16px;text-align:justify;font-weight:600;}
   .hero-story{
-    background:var(--bg-soft);border:1px solid #E8EDF3;
-    border-radius:12px;padding:16px 18px;margin-bottom:18px;max-width:540px;
+    border-left:3px solid var(--gold);
+    padding:4px 0 4px 16px;margin-bottom:18px;max-width:540px;
   }
   .hero-story p{font-size:14.5px;color:#374151;}
   .hero-story strong{color:var(--navy);}
   .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px;}
   .hero-badge{
-    background:var(--bg-soft);border:1px solid #E8EDF3;color:#374151;
-    padding:10px 16px;border-radius:10px;font-size:13.5px;display:flex;align-items:center;gap:8px;
+    color:#374151;
+    padding:0;font-size:13.5px;display:flex;align-items:center;gap:8px;
   }
   .hero-badge b{color:var(--navy);font-size:18px;white-space:nowrap;}
   .hero-cta-group{display:flex;gap:14px;flex-wrap:wrap;}
@@ -183,11 +183,12 @@
   .service-card{
     background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);
     border-top:4px solid var(--gold);transition:.25s;
+    display:flex;gap:18px;align-items:flex-start;
   }
   .service-card:hover{transform:translateY(-6px);}
   .service-icon{
-    width:50px;height:50px;border-radius:12px;background:var(--bg-soft);
-    display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px;
+    flex:0 0 50px;width:50px;height:50px;border-radius:12px;background:var(--bg-soft);
+    display:flex;align-items:center;justify-content:center;font-size:24px;
   }
   .service-card h3{font-size:18px;margin-bottom:8px;}
   .service-card p{color:var(--gray);font-size:14.5px;}
@@ -488,38 +489,52 @@
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">💰</div>
-        <h3>Vay vốn lưu động</h3>
-        <p>Bổ sung nguồn vốn kinh doanh, hạn mức tín dụng linh hoạt theo doanh thu và chu kỳ kinh doanh.</p>
+        <div>
+          <h3>Vay vốn lưu động</h3>
+          <p>Bổ sung nguồn vốn kinh doanh, hạn mức tín dụng linh hoạt theo doanh thu và chu kỳ kinh doanh.</p>
+        </div>
       </div>
       <div class="service-card">
         <div class="service-icon">🏗️</div>
-        <h3>Vay trung và dài hạn</h3>
-        <p>Tài trợ đầu tư máy móc, nhà xưởng, mở rộng quy mô sản xuất kinh doanh với lãi suất ưu đãi.</p>
+        <div>
+          <h3>Vay trung và dài hạn</h3>
+          <p>Tài trợ đầu tư máy móc, nhà xưởng, mở rộng quy mô sản xuất kinh doanh với lãi suất ưu đãi.</p>
+        </div>
       </div>
       <div class="service-card">
         <div class="service-icon">🌐</div>
-        <h3>Tài trợ thương mại quốc tế</h3>
-        <p>L/C, bảo lãnh, chuyển tiền quốc tế, hỗ trợ doanh nghiệp xuất nhập khẩu giao dịch an toàn.</p>
+        <div>
+          <h3>Tài trợ thương mại quốc tế</h3>
+          <p>L/C, bảo lãnh, chuyển tiền quốc tế, hỗ trợ doanh nghiệp xuất nhập khẩu giao dịch an toàn.</p>
+        </div>
       </div>
       <div class="service-card">
         <div class="service-icon">📊</div>
-        <h3>Quản lý dòng tiền</h3>
-        <p>Giải pháp quản lý tài khoản, thu chi tự động, tối ưu hiệu quả sử dụng vốn cho doanh nghiệp.</p>
+        <div>
+          <h3>Quản lý dòng tiền</h3>
+          <p>Giải pháp quản lý tài khoản, thu chi tự động, tối ưu hiệu quả sử dụng vốn cho doanh nghiệp.</p>
+        </div>
       </div>
       <div class="service-card">
         <div class="service-icon">💳</div>
-        <h3>Thẻ và thanh toán doanh nghiệp</h3>
-        <p>Thẻ tín dụng doanh nghiệp, dịch vụ thanh toán lương, thanh toán quốc tế nhanh chóng.</p>
+        <div>
+          <h3>Thẻ và thanh toán doanh nghiệp</h3>
+          <p>Thẻ tín dụng doanh nghiệp, dịch vụ thanh toán lương, thanh toán quốc tế nhanh chóng.</p>
+        </div>
       </div>
       <div class="service-card">
         <div class="service-icon">🤝</div>
-        <h3>Tư vấn theo ngành</h3>
-        <p>Đồng hành cùng đặc thù từng ngành nghề như thương mại, sản xuất, xây dựng, nông sản, dịch vụ.</p>
+        <div>
+          <h3>Tư vấn theo ngành</h3>
+          <p>Đồng hành cùng đặc thù từng ngành nghề như thương mại, sản xuất, xây dựng, nông sản, dịch vụ.</p>
+        </div>
       </div>
       <div class="service-card">
         <div class="service-icon">📜</div>
-        <h3>Bảo lãnh nội địa</h3>
-        <p>Bảo lãnh dự thầu, Bảo lãnh thực hiện hợp đồng, Bảo lãnh bảo hành, Bảo lãnh tạm ứng, Bảo lãnh thanh toán...</p>
+        <div>
+          <h3>Bảo lãnh nội địa</h3>
+          <p>Bảo lãnh dự thầu, Bảo lãnh thực hiện hợp đồng, Bảo lãnh bảo hành, Bảo lãnh tạm ứng, Bảo lãnh thanh toán...</p>
+        </div>
       </div>
     </div>
   </div>
