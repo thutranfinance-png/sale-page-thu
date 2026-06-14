@@ -79,9 +79,10 @@
     transform:skewX(-25deg);pointer-events:none;
   }
   .btn:hover::after{animation:btn-shine .85s ease;}
+  .btn-shine-loop::after{animation:btn-shine 2.6s ease-in-out infinite;}
   @keyframes btn-shine{
-    0%{left:-75%;}
-    100%{left:125%;}
+    0%,30%{left:-75%;}
+    60%,100%{left:125%;}
   }
   .btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 6px 18px rgba(242,182,66,0.45);}
   .btn-gold:hover{background:#dba02e;transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,182,66,0.55);}
@@ -376,13 +377,13 @@
         <div class="hero-badge"><b>24h</b> phản hồi tư vấn</div>
       </div>
       <div class="hero-cta-group">
-        <a href="#form" class="btn btn-gold">Đăng ký tư vấn miễn phí</a>
+        <a href="#form" class="btn btn-gold btn-shine-loop">Đăng ký tư vấn miễn phí</a>
         <a href="https://zalo.me/0939121018" target="_blank" class="btn btn-outline" onclick="trackContact('zalo_hero')">Kết bạn Zalo ngay</a>
       </div>
     </div>
     <div>
       <div class="hero-photo">
-        <img src="images/thu-avatar.jpg" alt="Trần Thị Mộng Thu, Trưởng phòng Khách hàng Doanh nghiệp Sacombank Cần Thơ">
+        <img src="thu-avatar.jpg" alt="Trần Thị Mộng Thu, Trưởng phòng Khách hàng Doanh nghiệp Sacombank Cần Thơ">
         <small>Trần Thị Mộng Thu. Trưởng phòng KHDN Sacombank Cần Thơ</small>
       </div>
     </div>
@@ -793,7 +794,7 @@
 <!-- ============ STICKY CTA ============ -->
 <div class="sticky-cta">
   <div>
-    <a href="#form" class="btn btn-gold">Đăng ký tư vấn</a>
+    <a href="#form" class="btn btn-gold btn-shine-loop">Đăng ký tư vấn</a>
     <a href="tel:0939121018" class="btn btn-outline-light" onclick="trackContact('phone_sticky')">Gọi ngay</a>
   </div>
 </div>
